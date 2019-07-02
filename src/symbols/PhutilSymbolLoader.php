@@ -389,7 +389,7 @@ final class PhutilSymbolLoader {
         $load_failed = 'function';
       }
     } else {
-      if (!class_exists($name, false) && !interface_exists($name, false)) {
+      if (!class_exists($name, false) && !interface_exists($name, false) && !trait_exists($name, false)) {
         $load_failed = 'class/interface';
       }
     }
